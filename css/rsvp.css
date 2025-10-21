@@ -1,0 +1,252 @@
+header {
+  background-color: #ecede8;
+  backdrop-filter: blur(6px); /* subtle blur effect for background */
+  -webkit-backdrop-filter: blur(6px); /* Safari support */
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1); /* soft blurred shadow */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0.5em 0;
+}
+
+.navbar {
+  padding: 0.5em;
+}
+
+.navbar .nav-menu .nav-item a.active {
+  color: #64876a;
+}
+
+ul {
+  display: flex;
+  padding: 0.3em;
+}
+
+li {
+  padding: 0.5em 4em;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Jost", serif;
+  letter-spacing: 1px;
+}
+
+li:nth-child(1) a:hover {
+  color: #64876a;
+}
+
+li:nth-child(2) a:hover {
+  color: #64876a;
+}
+li:nth-child(3) a:hover {
+  color: #64876a;
+}
+
+li:nth-child(1) a:active {
+  color: #64876a;
+}
+
+li:nth-child(2) a:active {
+  color: #64876a;
+}
+li:nth-child(3) a:active {
+  color: #64876a;
+}
+
+@media (max-width: 800px) {
+  body {
+    height: 100dvh;
+    background-color: #ecede8;
+  }
+
+  header {
+    background-color: #ecede8;
+    backdrop-filter: blur(8px); /* subtle blur effect for background */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* soft blurred shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar {
+    padding: 2px;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Jost, sans-serif;
+    letter-spacing: 0.5px;
+  }
+
+  li:nth-child(1) a:active {
+    color: #64876a;
+  }
+
+  li:nth-child(2) a:active {
+    color: #64876a;
+  }
+  li:nth-child(3) a:active {
+    color: #64876a;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ecede8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  height: 100dvh;
+  padding: 150px 0;
+}
+
+.rsvp-form {
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+  animation: fadeIn 0.7s ease;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ecede8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    padding: 0 20px;
+  }
+
+  .rsvp-form {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    animation: fadeIn 0.7s ease;
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #64876a;
+  font-size: 1.8rem;
+  font-family: Montez, sans-serif;
+  margin-bottom: 1rem;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+  resize: none;
+  font-family: Jost, sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #9caf88;
+  box-shadow: 0 0 5px rgba(156, 175, 136, 0.5);
+}
+
+button {
+  background: #809783;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #809783;
+  transform: scale(1.03);
+}
+
+.popup {
+  font-family: Jost, sans-serif;
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.popup-content {
+  font-family: Jost, sans-serif;
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  text-align: center;
+  animation: pop 0.4s ease;
+}
+
+.popup-content h3 {
+  color: #7a8b68;
+  margin-bottom: 10px;
+  font-family: Jost, sans-serif;
+}
+
+.popup-content button {
+  background: #9caf88;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 8px 16px;
+  font-family: Jost, sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

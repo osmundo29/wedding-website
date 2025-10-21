@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osmundo & Mary Grace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montez&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/intro.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/faqs.css" />
+    <link rel="stylesheet" href="css/rsvp.css" />
+  </head>
+  <body>
+    <!-- 🎬 INTRO -->
+    <section id="intro">
+      <h1 id="title">Osmundo & Mary Grace</h1>
+      <h4 onclick="goToHome()" id="touch">Tap to continue</h4>
+    </section>
+
+    <!-- 🏡 HOME -->
+    <section class="home" id="home">
+      <!--2nd 🏡 HOME -->
+      <header>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-page="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-page="faqs">Faq's</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-page="rsvp">Rsvp</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="slide1">
+          <img src="assets/grace.jpg" />
+
+          <div class="container-child">
+            <div class="content">
+              <span class="groom"> Osmundo </span>
+              <span> and </span>
+              <span class="bride"> Mary Grace </span>
+
+              <p>are getting married</p>
+            </div>
+
+            <div class="countdown">
+              <h2>Save the Date!</h2>
+              <h3>NOVEMBER 8, 2025</h3>
+              <div id="timer">
+                <div class="block">
+                  <span class="time" id="days">00</span>
+                  <span class="label">Days</span>
+                </div>
+                <div class="block">
+                  <span class="time" id="hours">00</span>
+                  <span class="label">Hours</span>
+                </div>
+                <div class="block">
+                  <span class="time" id="minutes">00</span>
+                  <span class="label">Minutes</span>
+                </div>
+                <div class="block">
+                  <span class="time" id="seconds">00</span>
+                  <span class="label">Seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="invitation-section">
+        <img class="flowers" src="assets/flowers1.png" alt="" />
+        <img class="flow" src="assets/flowers2.png" alt="" />
+
+        <div class="containercard">
+          <div class="envelope-wrapper">
+            <div class="envelope">
+              <div class="letter">
+                <div class="text">
+                  <p>You're Invited!!!</p>
+                  <p>
+                    With joy in our hearts, we invite you to celebrate the
+                    beginning of our forever. Join us as we say “I do” on
+                    November 8 surrounded by love, family, and friends. Your
+                    presence will make our day even more special.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="clickme">
+              <img src="assets/click.gif" />
+            </div>
+            <div class="waxseal">
+              <img src="assets/waxseal.webp" />
+            </div>
+          </div>
+        </div>
+
+        <div class="background-video">
+          <img class="armkiss" src="assets/armkiss.jpg" alt="" />
+          <img
+            src="https://media.tenor.com/pB1a59Mhtt0AAAAi/heart-hearts.gif"
+            class="gif-bg"
+          />
+        </div>
+      </div>
+      <div class="rsvp-button">
+        <p>
+          Your presence would mean so much to us on our special day. Kindly
+          confirm your attendance by clicking the button below.
+        </p>
+        <button onclick="showPage('rsvp')">RSVP</button>
+      </div>
+
+      <!-- Slider namin -->
+      <div class="slideshow">
+        <p>
+          <span>In God’s perfect time, He united our hearts.</span>
+          "Many are the plans in a person’s heart, but it is the Lord’s purpose
+          that prevails." <span>— Proverbs 19:21</span>
+        </p>
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="assets/pren.jpg" />
+            </div>
+            <div class="slide">
+              <img class="pict1" src="assets/pren1.jpg" alt="" />
+            </div>
+
+            <div class="slide"><img src="assets/pren2.jpeg" /></div>
+            <div class="slide"><img src="assets/pren3.jpg" alt="" /></div>
+            <div class="slide"><img src="assets/pren4.jpg" alt="" /></div>
+            <div class="slide"><img src="assets/pren5.jpg" alt="" /></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="maps">
+        <div class="main-container">
+          <p><span>The</span>Location</p>
+          <div class="box-container">
+            <div class="wedding">
+              <img src="assets/wed.png" class="pic" />
+              <p>Wedding Ceremony</p>
+              <p>Saint Peter the Martyr Parish Church</p>
+              <a
+                href="https://maps.app.goo.gl/U5HAhNSZrr8gvp3TA"
+                target="_blank"
+                class="btn"
+              >
+                View Location
+              </a>
+            </div>
+
+            <div class="reception">
+              <div class="reception-container">
+                <img src="assets/recept.png" class="pic" />
+              </div>
+              <p>Reception</p>
+              <p>Sitio Abagatan, Capantolanan, Sual, Pangasinan</p>
+              <a
+                href="https://maps.app.goo.gl/HAxxXXPBe3z3Dduq5"
+                target="_blank"
+                class="btn"
+              >
+                View Location
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="entourage">
+        <div class="container-entourage">
+          <img src="assets/ringcenter.png" alt="" />
+          <img src="assets/menandwoman.png" alt="" />
+          <img src="assets/rings.png" alt="" />
+          <img src="assets/brideandgroom.png" alt="" />
+          <p class="entourage-title"><span class="left">The</span>Entourage</p>
+          <div class="first-row">
+            <div class="groom-bride">
+              <h5>Parents of the Groom</h5>
+              <p>Mrs. Magilyn M. Estrada</p>
+              <p>Mr. Osmundo E. Estrada</p>
+            </div>
+            <div class="groom-bride">
+              <h5>Parenst of the Bride</h5>
+              <p>Mrs. Gemma B. Ofrancia</p>
+              <p>Mr. Manny B. Ofrancia</p>
+            </div>
+          </div>
+          <div class="second-row">
+            <p class="ninong">Principals Sponsors</p>
+            <div class="Names">
+              <div class="First-Column">
+                <p>Kgwd. Genie Rupin</p>
+                <p>Kgwd. Anghilita Daong</p>
+                <p>Mrs. Catherine Balbuena</p>
+                <p>Mrs. Analyn Battala</p>
+                <p>Mrs. Cheryl Jean S. Gangan</p>
+                <p>Mrs. Margelyn P. Versoza</p>
+                <p>Mrs. Arlyn Barozo Gadcad</p>
+                <p>Mrs. Rosemary Piano</p>
+                <p>Mrs. Melanie Beltran</p>
+                <p>Mrs. Catherine Ferrer</p>
+                <p>Mrs. Rose Nacional</p>
+                <p>Mrs. Maritess Quintella</p>
+                <p>Mrs. Roselyn Sioco</p>
+                <p>Mrs. Jean Beltran</p>
+                <p>Mrs. Rossaly Espina</p>
+                <p>Mrs. Rowena Garcia</p>
+                <p>Mrs. Elizabeth Abarra</p>
+                <p>Mrs. Mellanie Sabado</p>
+                <p>Mrs. Charity Togle</p>
+                <p>Mrs. Manilyn Lugasa</p>
+                <p>Mrs. Amalda Verzosa</p>
+                <p>Mrs. Manilyn Arafiles</p>
+                <p>Mrs. Joy Reynaldo</p>
+                <p>Mrs. Josie R. Beltran</p>
+                <p>Mrs. Leila T. Paroni</p>
+                <p>Mrs. Cheril N. Martinez</p>
+                <p>Mrs. Manuel Ofrancia</p>
+                <p>Mrs. Elizabeth Mendoza</p>
+
+                <p>Mrs. Imelda Barassi</p>
+                <p>Mrs. Mary Jean Laxamana</p>
+                <p>Mrs. Ginalyn A. Estabillo</p>
+                <p>Mrs. Amy Agbuya</p>
+                <p>Mrs. Isagani Agbuya</p>
+                <p>Mrs. May Lander</p>
+              </div>
+              <div class="Second-Column">
+                <p>Mayor. Angelo F. Desear, MIT</p>
+                <p>Capt. Darwin Ulanday</p>
+                <p>Capt. Juanito Tomagoy Jr.</p>
+                <p>Kgwd. Jun Biag</p>
+                <p>Kgwd. Reymund Trinidad</p>
+                <p>Kgwd. John Ulanday</p>
+                <p>Kgwd. Dator Osana</p>
+                <p>Kgwd. Eusebio Rabanal Jr.</p>
+                <p>Kgwd. Ramil Barrienttos</p>
+
+                <p>Kgwd. John Ulanday</p>
+                <p>Mr. Eddie Beltran</p>
+                <p>Mr. Dilfen Caburao</p>
+                <p>Mr. Michael Ulanday</p>
+                <p>Mr. Firdinand Tumazas</p>
+                <p>Mr. Billy Beltran</p>
+                <p>Mr. Freddie Beltran</p>
+                <p>Mr. Jun Eholinao</p>
+                <p>Mr. Alfredo Abarra</p>
+                <p>Mr. Rodel Domondon</p>
+                <p>Mr. Jun Rabago</p>
+                <p>Mr. Lody Rapisura</p>
+                <p>Mr. Ernisto Ofrancia</p>
+                <p>Mr. Jhony Cacactin</p>
+                <p>Mr. Boyet Gragasin</p>
+                <p>Mr. Joseph Casampol</p>
+                <p>Mr. Renato Estrada</p>
+                <p>Mr. Scott Lander</p>
+                <p>Mr. Rodolfo Abat</p>
+                <p>Mr. Jay Boy Ligad</p>
+                <p>Mr. Domingo A. Laxamana Jr.</p>
+                <p>Mrs. Rosemarie Abat</p>
+                <p>Mrs. Leny Martin</p>
+                <p>Mrs. Mylene Ligad</p>
+                <p>Mrs. Ruby Feliciano</p>
+                <p>Mrs. Norma Facun</p>
+              </div>
+            </div>
+          </div>
+          <div class="third-row">
+            <div>
+              <p>BestMan</p>
+              <p>Mr. John Carlo M. Estrada</p>
+            </div>
+            <div>
+              <p>Maid of Honor</p>
+              <p>Ms. Stephanie C. Ofrancia</p>
+            </div>
+          </div>
+
+          <div class="fourth-row">
+            <p class="secondarysponsor">Secondary Sponsors</p>
+
+            <div class="candle">
+              <p>Candle</p>
+              <p>Ms. Charmille Ashley M. Estrada</p>
+              <p>Mr. Jomari B. Ofrancia</p>
+            </div>
+            <div class="cord-viel-row">
+              <div>
+                <p>Cord</p>
+                <p>Ms. Ronalyn B. Piano</p>
+                <p>Mr. Michael M. Perez</p>
+              </div>
+              <div>
+                <p>Viel</p>
+                <p>Ms. Erica S. Estrada</p>
+                <p>Mr. Marco B. Ofrancia</p>
+              </div>
+            </div>
+            <div class="men-maid">
+              <div>
+                <p>GroomsMen</p>
+                <p>Mark Luis M. Estrada</p>
+                <p>Richmund P. Camba</p>
+                <p>Allan Aiden Manzano</p>
+                <p>Jerome Beltran</p>
+              </div>
+              <div>
+                <p>BridesMaid</p>
+                <p>Jazzleen Kwen B. Estrada</p>
+                <p>Maggie B. Ofrancia</p>
+                <p>Mary Queen B. Ofrancia</p>
+                <p>Jady Mare B. Caburao</p>
+              </div>
+            </div>
+
+            <div class="ring">
+              <div class="ringbearer">
+                <p>Ring Bearer</p>
+                <p>Calyx Vincent E. Pascual</p>
+              </div>
+              <div class="bible-coin">
+                <div>
+                  <p>Bible Bearer</p>
+                  <p>Luis C. Beltran</p>
+                </div>
+                <div>
+                  <p>Coin Bearer</p>
+                  <p>Zack P. Labarejos</p>
+                </div>
+              </div>
+            </div>
+            <div class="flower-escort">
+              <div class="flower-girl">
+                <p>Flower Girl</p>
+                <p>Mekaela lex Perez</p>
+                <p>Caden Isao</p>
+                <p>Zia Beltran</p>
+                <p>Janna Ofrancia</p>
+                <p>Jessa</p>
+              </div>
+              <div class="escorts">
+                <p>Escorts</p>
+                <p>John John Ofrancia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="other-details">
+        <div class="wedding-timeline">
+          <p>Wedding Day Timeline</p>
+          <p>Our Happily Ever After Schedule</p>
+          <div class="timeline">
+            <div class="dot">
+              <p>8:00 AM</p>
+              <p>Wedding Ceremony</p>
+              <img src="assets/ring2.png" alt="" />
+            </div>
+            <div class="dot">
+              <p>9:30 AM</p>
+              <p>Photo Session</p>
+              <img src="assets/photo.png" alt="" />
+            </div>
+
+            <div class="dot">
+              <p>10:45 AM</p>
+              <p>Lunch Reception</p>
+              <img src="assets/reception.png" alt="" />
+            </div>
+            <div class="dot">
+              <p>11:30 AM</p>
+              <p>Time to Dance</p>
+              <img src="assets/dancewed.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="Gallery"></div>
+
+        <div class="dresscode">
+          <p>Attire</p>
+          <p>
+            We encourage our guests to wear formal/semi-formal with this colors
+            on our special day
+          </p>
+          <div class="circle-row">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <p>Gallery</p>
+        <div class="container-gallery">
+          <img src="assets/armkiss.jpg" alt="" />
+          <img src="assets/holdinghands.jpg" alt="" />
+          <img src="assets/pren.jpg" alt="" />
+          <img src="assets/pren1.jpg" alt="" />
+          <img src="assets/pren3.jpg" alt="" />
+          <img src="assets/pren4.jpg" alt="" />
+          <img src="assets/pren5.jpg" alt="" />
+          <img src="assets/pic4.jpg" alt="" />
+          <img src="assets/pic3.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--  FAQs -->
+    <section id="faqs">
+      <header>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-page="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-page="faqs">Faq's</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-page="rsvp">Rsvp</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container1">
+        <p class="faqs">Wedding Faqs</p>
+        <div class="faq-container">
+          <div class="faq">
+            <div class="faq-question">Kailan at saan gaganapin ang kasal?</div>
+            <div class="faq-answer">
+              Petsa: November 08, 2025 Seremonya: St. Peter the Martyr Parish
+              Church - Poblacion, Sual, Pangasinan Resepsyon: Sitio Abagatan,
+              Brgy. Capantolan Sual, Pangasinan
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="faq-question">Anong oras mag sisimula ang kasal?</div>
+            <div class="faq-answer">
+              Mangyaring dumating ng 8:00am, dahil ang seremonya ay magsisimula
+              ng 8:30am nang eksakto.
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="faq-question">May parking space po ba sa venue?</div>
+            <div class="faq-answer">
+              Wala pong designated parking area, pero pwede pong mag-park sa
+              gilid ng kalsada malapit sa venue, basta siguraduhin lang na hindi
+              nakakasagabal sa daanan.
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="faq-question">pwede po ba mag dala ng plus one?</div>
+            <div class="faq-answer">
+              Opo, pwedeng-pwede po magdala ng plus one, kahit plus two o three
+              pa, walang problema.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  RSVP -->
+    <section id="rsvp">
+      <header>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-page="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-page="faqs">Faq's</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-page="rsvp">Rsvp</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="body">
+        <form id="rsvp-form">
+          <h2>Wedding RSVP</h2>
+
+          <input
+            type="text"
+            name="guest_name"
+            placeholder="Your Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="guest_email"
+            placeholder="Your Email"
+            required
+          />
+
+          <select name="attendance" required>
+            <option value="">Will you attend?</option>
+            <option value="Yes, I’ll be there!">Yes, I’ll be there!</option>
+            <option value="Sorry, I can’t make it.">
+              Sorry, I can’t make it.
+            </option>
+          </select>
+
+          <input
+            type="number"
+            name="guest_count"
+            min="1"
+            max="3"
+            placeholder="Number of Guests"
+          />
+
+          <textarea
+            name="message"
+            rows="3"
+            placeholder="Message or Song Request (optional)"
+          ></textarea>
+
+          <button type="submit">Send RSVP</button>
+        </form>
+
+        <!-- Popup Message -->
+        <div class="popup" id="popup">
+          <div class="popup-content">
+            <h3>Thank you for your RSVP! 💚</h3>
+            <p>We’re so happy to celebrate this special day with you.</p>
+            <button onclick="closePopup()">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🎵 MUSIC -->
+    <audio
+      id="bg-music"
+      src="assets/It Might Be You - Stephen Bishop Violin Cover.mp3"
+      loop
+    ></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
