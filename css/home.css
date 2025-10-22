@@ -1375,6 +1375,7 @@ li:nth-child(3) a:active {
       background-color: #e4e6d9;
       font-family: Jost, sans-serif;
       font-size: 15px;
+      z-index: 100;
 
       &:hover {
         background-color: #4f6252;
@@ -1395,7 +1396,7 @@ li:nth-child(3) a:active {
 
 .entourage {
   margin: 0;
-  padding: 120px;
+  padding: 120px 0px 120px;
   width: 100%;
   height: auto;
 
@@ -1412,7 +1413,7 @@ li:nth-child(3) a:active {
   }
 
   & .entourage-title {
-    animation: entourage-animation-top 3s ease-in-out;
+    animation: entourage-animation-top 3s ease-in-out both;
     animation-timeline: view();
     animation-range: entry 0% cover 60%;
   }
@@ -1490,12 +1491,12 @@ li:nth-child(3) a:active {
 @keyframes entourage-animation {
   0% {
     opacity: 0.2;
-    transform: translateX(500px);
+    transform: translateX(10rem);
   }
 
   50% {
     opacity: 0.5;
-    transform: translateX(300px);
+    transform: translateX(5rem);
   }
 
   100% {
@@ -1507,12 +1508,12 @@ li:nth-child(3) a:active {
 @keyframes entourage-animation-left {
   0% {
     opacity: 0.2;
-    transform: translateX(-500px);
+    transform: translateX(-10rem);
   }
 
   50% {
     opacity: 0.5;
-    transform: translateX(-300px);
+    transform: translateX(-5rem);
   }
 
   100% {
@@ -1524,12 +1525,12 @@ li:nth-child(3) a:active {
 @keyframes entourage-animation-top {
   0% {
     opacity: 0.2;
-    transform: translateY(500px);
+    transform: translateY(10rem);
   }
 
   50% {
     opacity: 0.5;
-    transform: translateY(300px);
+    transform: translateY(5rem);
   }
 
   100% {
@@ -1538,6 +1539,56 @@ li:nth-child(3) a:active {
   }
 }
 @media (max-width: 600px) {
+  @keyframes entourage-animation {
+    0% {
+      opacity: 0.2;
+      transform: translateX(1.5rem);
+    }
+
+    50% {
+      opacity: 0.5;
+      transform: translateX(1rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes entourage-animation-left {
+    0% {
+      opacity: 0.2;
+      transform: translateX(-1.5rem);
+    }
+
+    50% {
+      opacity: 0.5;
+      transform: translateX(-1rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes entourage-animation-top {
+    0% {
+      opacity: 0.2;
+      transform: translateY(1.5rem);
+    }
+
+    50% {
+      opacity: 0.5;
+      transform: translateY(1rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   .entourage {
     padding: 80px 0;
   }
@@ -2342,7 +2393,7 @@ li:nth-child(3) a:active {
   width: 60px;
   height: 60px;
   border-radius: 50px;
-  background-color: #ece8dc;
+  background-color: #b87c4c;
 
   box-shadow: 3px 2px 30px rgba(0, 0, 0, 0.1);
 }
@@ -2351,7 +2402,7 @@ li:nth-child(3) a:active {
   width: 60px;
   height: 60px;
   border-radius: 50px;
-  background-color: #ffff;
+  background-color: #ebd9d1;
 
   box-shadow: 3px 2px 30px rgba(63, 63, 63, 0.3);
 }
@@ -2360,7 +2411,7 @@ li:nth-child(3) a:active {
   width: 60px;
   height: 60px;
   border-radius: 50px;
-  background-color: #898c75;
+  background-color: #1c352d;
 
   box-shadow: 3px 2px 30px rgba(63, 63, 63, 0.3);
 }
@@ -2369,7 +2420,7 @@ li:nth-child(3) a:active {
   width: 60px;
   height: 60px;
   border-radius: 50px;
-  background-color: #626a54;
+  background-color: #a8bba3;
 
   box-shadow: 3px 2px 30px rgba(63, 63, 63, 0.3);
 }
@@ -2421,7 +2472,7 @@ li:nth-child(3) a:active {
     width: 60px;
     height: 60px;
     border-radius: 50px;
-    background-color: #ece8dc;
+    background-color: #b87c4c;
     box-shadow: 3px 2px 40px rgba(63, 63, 63, 0.3);
   }
 
@@ -2429,8 +2480,7 @@ li:nth-child(3) a:active {
     width: 60px;
     height: 60px;
     border-radius: 50px;
-    background-color: #ffff;
-
+    background-color: #ebd9d1;
     box-shadow: 3px 2px 30px rgba(63, 63, 63, 0.3);
   }
 
@@ -2438,8 +2488,7 @@ li:nth-child(3) a:active {
     width: 60px;
     height: 60px;
     border-radius: 50px;
-    background-color: #898c75;
-
+    background-color: #1c352d;
     box-shadow: 3px 2px 30px rgba(63, 63, 63, 0.3);
   }
 
@@ -2447,8 +2496,7 @@ li:nth-child(3) a:active {
     width: 60px;
     height: 60px;
     border-radius: 50px;
-    background-color: #626a54;
-
+    background-color: #a8bba3;
     box-shadow: 3px 2px 30px rgba(0, 0, 0, 0.3);
   }
 }
@@ -2523,4 +2571,3 @@ li:nth-child(3) a:active {
     }
   }
 }
-
